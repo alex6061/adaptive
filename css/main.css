@@ -465,15 +465,7 @@ nav {
   gap: 30px;
 }
 
-@media screen and (min-width: 480px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .wrapper {
     display: flex;
     flex-direction: row;
