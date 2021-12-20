@@ -426,11 +426,15 @@ header {
 }
 
 .wrapper__box {
-  background-color: #F5F4FA;
-  padding: 25px 0 25px;
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  padding: 0;
+  border: none;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
 }
 
 .section-icon__svg {
@@ -455,6 +459,13 @@ header {
 @media screen and (min-width: 480px) {
   .wrapper__name {
     display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper__name {
+    display: block;
     text-align: start;
   }
 }
@@ -469,12 +480,35 @@ header {
   color: #757575;
 }
 
-.wrapper {
-  display: block;
-  margin-bottom: 30px;
+@media screen and (max-width: 480px) {
+  .wrapper__text {
+    display: block;
+    text-align: center;
+  }
 }
 
-@media screen and (min-width: 480px), (max-width: 767px) {
+@media screen and (min-width: 480px) {
+  .wrapper__text {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper__text {
+    display: block;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .wrapper {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -483,12 +517,15 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .wrapper {
     display: flex;
-    justify-content: space-between;
-    justify-items: baseline;
+    gap: 30px;
   }
+}
+
+.wrapper__item {
+  padding: 15px;
 }
 
 @media screen and (max-width: 480px) {
