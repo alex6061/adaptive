@@ -93,7 +93,7 @@ p {
   padding: 60px 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0;
   }
@@ -463,6 +463,14 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 1200px) {
