@@ -10,11 +10,8 @@
   padding: 25px 0 25px;
   display: flex;
   justify-content: center;
-  @media screen and (min-width:768px){
-    display: flex;
-    align-items: center;
-  }
-  }
+  
+}
 
 .section-icon__svg {
   display: flex;
@@ -53,18 +50,20 @@
   display: block;
   margin-bottom: 30px;
 
-  @media screen and (min-width:480px) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  @media screen and (min-width:480px), (max-width:767px){
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-gap: 30px;
   }
-
 
   @media screen and (min-width:768px) {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+   justify-items:baseline;
   }
 }
+
 
 
 
