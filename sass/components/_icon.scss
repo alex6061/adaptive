@@ -2,7 +2,6 @@
   visibility: hidden;
   text-transform: uppercase;
   text-align: center;
- 
 }
 
 
@@ -51,17 +50,17 @@
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  display: block;
+  margin-bottom: 30px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:480px) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width:1200px) {
+
+  @media screen and (min-width:768px) {
     display: flex;
     flex-direction: row;
   }

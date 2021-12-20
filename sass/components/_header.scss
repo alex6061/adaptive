@@ -13,21 +13,15 @@ header {
   }
 
 
-header {
-  display: block;
-  width: 100%;
-  background: #fff;
-  border-bottom: 1px solid #ECECEC;
-}
-
 nav {
-  display: flex;
-  gap: 90px;
+  @media screen and (min-width:1200) {
+    display: flex;
+    gap: 90px;
+  }
 }
 
 .header {
   padding: 25px 0;
-  display: flex;
   overflow: hidden;
 }
 
@@ -36,14 +30,20 @@ nav {
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-  @media screen and (max-width:480px) {
+  @media screen and (max-width:768px) {
     visibility: hidden;
   }
 }
 
 
+.header__button .icon-menu .icon-cross {
+  @media screen and (min-width:768) {
+    display: none;
+  }
+}
+
 .header__button {
-  border: none;
+  // margin-left: auto;
   background-color: #fff;
 }
 
@@ -114,4 +114,24 @@ nav {
     color: $fillColor;
     width: 100%;
   }
+}
+
+
+.mob-menu__contacts{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mob-menu__tel {
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 40px;
+/* identical to box height */
+
+letter-spacing: 0.02em;
+
+color: #2196F3;
 }
