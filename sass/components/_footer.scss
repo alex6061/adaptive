@@ -11,7 +11,17 @@ footer {
     margin: 0 auto;
   gap: 60px;
   overflow: hidden;
+    @media screen and (min-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    justify-content: space-between
+  }
 }
+
 
 .first__menu {
     display: flex;
@@ -32,7 +42,6 @@ footer {
 .footer_logo {
   display: block;
   text-decoration: none;
-  margin-bottom: 20px;
 }
 
 .address__list{
@@ -62,6 +71,9 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media screen and  (min-width:1200px){
+      display: block;
+    }
 }
 
 
@@ -114,19 +126,26 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  @media screen and  (min-width:1200px){
+    display: block;
+  }
 }
 
 .footer-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 20px;
+  @media screen and (min-width:1200px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 
 #footer-form__email{
-  width: max-content;
+  width: 450px;
   height: 50px;
   background: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -152,8 +171,11 @@ footer {
   &:focus:hover:active {
     border-color: white;
     outline: none;
+    
   }
-
+  @media screen and  (min-width:1200px){
+    width: 356px;
+  }
 }
 
 .footer-button {
