@@ -6,9 +6,9 @@
 
 
 .team__list {
-  display:flex ;
-  flex-direction: column;
-  gap: 30px;
+  // display:flex ;
+  // flex-direction: column;
+  // gap: 30px;
   @media screen and (min-width:768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -21,6 +21,7 @@
 }
 
 .team__list__item {
+  margin: 15px;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.14);
   border-radius: 4px;

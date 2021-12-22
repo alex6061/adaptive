@@ -68,6 +68,8 @@ text-align: center;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 60px;
+    @media screen and (min-width:768) {
+    }
     @media screen and  (min-width:1200px){
       display: block;
     }
@@ -140,7 +142,7 @@ text-align: center;
 
 
 #footer-form__email{
-
+  margin: 0 15px;
   height: 50px;
   background: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
