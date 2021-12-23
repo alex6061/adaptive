@@ -108,7 +108,21 @@
                 <li class="card__item">
                     <a class="card__link" href="">
                         <div class="box">
-                            <img  class="box__img" src="img/portfolio/hand_free.jpg" alt="hands_free" width="370">
+                            <picture>
+                                <source 
+                                                            srcset="./img/portfolio/hands_free_mob_1x.jpg 1x,
+                                                                    hands_free_mob_2x.jpg 2x"
+
+                                                            srcset="./img/portfolio/hands_free_tab_1x.jpg 1x,
+                                                                    hands_free_tab_2x.jpg 2x"
+
+                                                            srcset="./img/portfolio/hands_free_desct_1x.jpg 1x,
+                                                                    hands_free_desct_2x.jpg 2x"
+                                                
+                                >
+                                <img  class="box__img" src="img/portfolio/hands_free_mob_1x.jpg " alt="hands_free" width="370">
+
+                            </picture>
                             <div class="overlay">
                                 <p class="overlay__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -202,10 +216,12 @@
 
 <footer id="footer">
     <div class="container">
+
         <div class="footer__menu">
 
             <div class="first__menu">
-                <a class="footer_logo" href=""><span class="web">Web</span><span class="footer_studio">Studio</span></a>
+
+                <a class="footer__logo" href=""><span class="web">Web</span><span class="footer_studio">Studio</span></a>
                 <address class="address">
                     <ul class="address__list">
                         <li class="address__item"><a target="_blank" class="footer_contact" href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+02000/data=!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwiNj4Tklcv0AhXDs4sKHXNqDuIQ8gF6BAgIEAE" >г. Киев, пр-т Леси Украинки, 26</a></li>
@@ -213,9 +229,11 @@
                         <li class="address__item"><a class="footer_contact" href="tel:+380961111111" >+38 096 111 11 11</a></li>
                     </ul>
                 </address>
+
             </div>
 
             <div class="second__menu">
+                
                 <p class="footer-name">Присоединяйтесь</p>
 
                 <ul class="footer-networks">
@@ -252,21 +270,74 @@
             </div>
 
             <div class="third__menu">
-                <p class="footer-name">Подпишитесь на рассылку</p>
-
-                <form class="footer-form" action="submit">
-                    <label for="footer-form__email">
-                        <input id="footer-form__email" type="email" placeholder="E-mail" value="enter email" >
-                    </label>
+                    <label class="footer-form__email" for="footer-form__email">Подпишитесь на рассылку</label>
+                        <input class="input" id="footer-form__email" type="email" placeholder="E-mail">
+                    
                     <button class="footer-button" type="submit">Подписаться
                         <svg class="footer-button__svg" width="24" height="24">
                             <use href="img/icons/symbol-defs.svg#icon-icon-send-1"></use>
                         </svg>
                     </button>
 
-                </form>
             </div>
         </div>
+    </div>
+</footer>
+
+
+<div class="backdrop is-hidden" data-modal>
+
+
+    <div class="modal">
+        
+        <button data-modal-close class="close-btn" >
+            <svg class="close-btn__svg" width="18" height="18">
+                <use href="img/icons/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+        </button>
+        <p class="modal-form__main">Оставьте свои данные, мы вам перезвоним</p>
+
+        <form  class="modal-form js-speaker-form" action="form">
+
+            <div class="form">
+                <label for="form__name">Имя</label>
+                <input class="form__name" id="form__name" type="text" placeholder="  " autofocus>
+                <svg class="form__svg" width="18" height="18">
+                    <use  href="img/icons/symbol-defs.svg#icon-person-black-18dp-1-1"></use>
+                </svg>
+            </div>
+
+            <div class="form">
+                <label for="form__tel">Телефон</label>
+                <input class="form__tel" id="form__tel" type="tel">
+                <svg class="form__svg" width="18" height="18">
+                    <use href="img/icons/symbol-defs.svg#icon-phone-black-18dp-1"></use>
+                </svg>
+            </div>
+
+            <div class="form">
+                <label for="form__email">Почта</label>
+                <input class="form__email" id="form__email"  type="email">
+                <svg class="form__svg" width="18" height="18">
+                    <use href="img/icons/symbol-defs.svg#icon-email-black-18dp-1"></use>
+                </svg>
+            </div>
+
+            <div class="form">
+                <label for="comment">Коментарий</label>
+                <textarea name="new" id="comment" ></textarea>
+            </div>
+
+            <div class="box">
+                <label class="label" for="checkbox">
+                    <input id="checkbox" class="checkbox" type="checkbox">
+                    <span class="checkbox__info"></span>Соглашаюсь с рассылкой и принимаю <a class="checkbox_link" href="">Условия договора</a>
+                </label>
+            </div>
+
+            <button class="form-button" type="submit">Отправить</button>
+
+        </form>
     </div>
 </footer>
 
