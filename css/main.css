@@ -1416,18 +1416,6 @@ label {
   fill: #2196f3;
 }
 
-.mob-menu__button .icon-close {
-  display: none;
-}
-
-.mob-menu__button.is-open .icon-close {
-  display: block;
-}
-
-.mob-menu__button .is-open .icon-menu {
-  display: none;
-}
-
 .mob-menu__list {
   display: flex;
   flex-direction: column;
