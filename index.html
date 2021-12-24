@@ -21,18 +21,28 @@
     <div class="container">
         <div class="header">
             <nav>
+                <!-- =====================ЛОГО============================ -->
                 <a class="header__logo" href=""><span class="web">Web</span><span class="studio">Studio</span></a>
                 <ul class="header-list">
                     <li><a class="header-list__link studio_link" href="index.html">Студия</a></li>
                     <li><a class="header-list__link" href="portfolio.html">Портфолио</a></li>
                     <li><a class="header-list__link" href="#footer">Контакты</a></li>
                 </ul>
-                <button type="button" class="mob-menu__button toggleMenu js-open-menu is-open" data-menu-button>
+                <!-- =============================mob-burger=================== -->
+                <button 
+                type="button" 
+                class="button-mobile menu-toggle js-open-menu" 
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+
                     <svg width="24px" height="24px">
                         <use class="icon-menu" href="img/icons/symbol-defs.svg#icon-menu"></use>
                     </svg>
                 </button> 
+
             </nav>
+
+            <!-- ===================contacts================= -->
             <ul class="header-contacts">
                 <li class="header-contacts__item">
                     <a class="header-contacts__link" href="mailto:info@devstudio.com"><svg class="header-contacts__svg" width="16" height="12">
@@ -45,57 +55,13 @@
                     </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-
-             <div class="mob-menu">
-                <div class="mob-menu__container js-menu-container">
-                    
-                    <button class="mob-menu__button toggleMenu js-close-menu" aria-expended="false" data-menu-button>
-                        <svg width="18px" height="18px">
-                            <use class="icon-close" href="img/icons/symbol-defs.svg#icon-close"></use>
-                        </svg>
-                    </button> 
-
-                   <ul class="mob-menu__list">
-                        <li class="mob-menu__item">
-                            <a class="mob-menu__link" href="">Студия</a>
-                        </li>
-                        <li class="mob-menu__item">
-                            <a class="mob-menu__link" href="">Портфолио</a>
-                        </li>
-                        <li class="mob-menu__item">
-                            <a class="mob-menu__link" href="">Контакты</a>
-                        </li>
-                
-                    </ul>
-
-                    <ul class="mob-menu__contacts">
-                        <li><a class="mob-menu__tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                        <li><a class="mob-menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    </ul>
-
-                    <ul class="mob-menu__networks">
-                        <li class="mob-menu__networks__item">
-                            <a class="mob-menu__networks__link" href="#">Instagram</a>
-                        </li>
-                        <li class="mob-menu__networks__item">
-                            <a class="mob-menu__networks__link" href="#">Twitter</a>
-                        </li>
-                        <li class="mob-menu__networks__item">
-                            <a class="mob-menu__networks__link" href="#">Facebook</a>
-                        </li>
-                        <li class="mob-menu__networks__item">
-                            <a class="mob-menu__networks__link" href="#">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>             
-            </div> 
         </div>
     </div> 
 
 </header> 
 
 <main>
-    <!-- ===============герой============== -->
+    <!-- =================герой================ -->
     <section class="hero-img">
         <div class="container">
             <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
@@ -484,7 +450,7 @@
 
 
 <!--------------FOOTER--------------------------->
-<!-- 
+
 <footer id="footer">
     <div class="container">
 
@@ -612,8 +578,54 @@
     </div>
 </div> 
 
+
+    <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+        
+        <button class="menu-toggle js-close-menu" aria-expended="false" data-menu-button>
+            <svg width="18px" height="18px">
+                <use class="icon-close" href="img/icons/symbol-defs.svg#icon-close"></use>
+            </svg>
+        </button> 
+
+       <ul class="mob-menu__list">
+            <li class="mob-menu__item">
+                <a class="mob-menu__link" href="">Студия</a>
+            </li>
+            <li class="mob-menu__item">
+                <a class="mob-menu__link" href="">Портфолио</a>
+            </li>
+            <li class="mob-menu__item">
+                <a class="mob-menu__link" href="">Контакты</a>
+            </li>
+    
+        </ul>
+
+        <ul class="mob-menu__contacts">
+            <li><a class="mob-menu__tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="mob-menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+
+        <ul class="mob-menu__networks">
+            <li class="mob-menu__networks__item">
+                <a class="mob-menu__networks__link" href="#">Instagram</a>
+            </li>
+            <li class="mob-menu__networks__item">
+                <a class="mob-menu__networks__link" href="#">Twitter</a>
+            </li>
+            <li class="mob-menu__networks__item">
+                <a class="mob-menu__networks__link" href="#">Facebook</a>
+            </li>
+            <li class="mob-menu__networks__item">
+                <a class="mob-menu__networks__link" href="#">LinkedIn</a>
+            </li>
+        </ul>
+    </div>             
+
+
+
+
+
 <script src="js/modal.js"></script>
-<script src="js/menu.js"></script>
 
 <script>
     (() => {
@@ -629,6 +641,13 @@
     })();
 </script> 
 
+<script
+defer
+src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"
+></script>
+<script defer src="js/mobile-menu.js"></script>
 
 </body>
-</html>
+</html> 
