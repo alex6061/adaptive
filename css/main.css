@@ -1398,12 +1398,16 @@ label {
   position: absolute;
 }
 
-.mob-menu__button.icon-close {
+.mob-menu__button .icon-close {
   display: none;
 }
 
 .mob-menu__button.is-open .icon-close {
   display: block;
+}
+
+.mob-menu__button .is-open .icon-menu {
+  display: none;
 }
 
 .mob-menu__list {

@@ -1,8 +1,6 @@
 
 
 .mob-menu {
-
-     
     background: wheat;
     display: block;
     position: fixed;
@@ -12,8 +10,6 @@
     height: 100vh;
     padding: 48px 40px;
     z-index: 2;
-    
-   
 }
 
 .mob-menu__button {
@@ -23,7 +19,7 @@
     position: absolute;
 }
 
-.mob-menu__button.icon-close {
+.mob-menu__button .icon-close {
     display: none;
 }   
 
@@ -31,11 +27,9 @@
     display: block;
 }
 
-
-
-// .mob-menu__button .is-open  .icon-close{
-//     display: none;
-// }
+.mob-menu__button .is-open  .icon-menu{
+    display: none;
+}
 
 .mob-menu__list {
     display: flex;

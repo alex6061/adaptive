@@ -27,10 +27,9 @@
                     <li><a class="header-list__link" href="portfolio.html">Портфолио</a></li>
                     <li><a class="header-list__link" href="#footer">Контакты</a></li>
                 </ul>
-                <button class="mob-menu__button is-open" data-menu-button>
+                <button type="button" class="mob-menu__button toggleMenu js-open-menu is-open" data-menu-button>
                     <svg width="24px" height="24px">
                         <use class="icon-menu" href="img/icons/symbol-defs.svg#icon-menu"></use>
-                        <use class="icon-close" href="img/icons/symbol-defs.svg#icon-close"></use>
                     </svg>
                 </button> 
             </nav>
@@ -47,16 +46,16 @@
                 </li>
             </ul>
 
-            <!-- <div class="mob-menu">
-                <div class="mob-menu__container">-->
+             <div class="mob-menu">
+                <div class="mob-menu__container js-menu-container">
                     
-                    <!-- <button class="mob-menu__button is-сlose" aria-expended="false" data-menu-button>
+                    <button class="mob-menu__button toggleMenu js-close-menu" aria-expended="false" data-menu-button>
                         <svg width="18px" height="18px">
                             <use class="icon-close" href="img/icons/symbol-defs.svg#icon-close"></use>
                         </svg>
-                    </button> -->
+                    </button> 
 
-                   <!-- <ul class="mob-menu__list">
+                   <ul class="mob-menu__list">
                         <li class="mob-menu__item">
                             <a class="mob-menu__link" href="">Студия</a>
                         </li>
@@ -88,21 +87,22 @@
                             <a class="mob-menu__networks__link" href="#">LinkedIn</a>
                         </li>
                     </ul>
-                </div>             -->
+                </div>             
             </div> 
         </div>
     </div> 
 
 </header> 
 
-<!--<main>
+<main>
+    <!-- ===============герой============== -->
     <section class="hero-img">
         <div class="container">
             <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
             <button data-modal-open class="hero__button" type="button">Заказать услугу</button>
         </div>
     </section>
- 
+ <!-- ==================Иконки==================== -->
     <section class="section-icon">
         <div class="container">
             <h2 class="section-icon__title">section-icon</h2>
@@ -147,14 +147,22 @@
         </div>
     </section>
 
-     <section class=" section section-activity">
+<!-- ====================чем мы занимаемся===================== -->
+     <section class="section section-activity">
         <div class="container">
             <h2 class="section-name">Чем мы занимаемся</h2>
 
             <ul class="activity">
                 <li class="activity__item">
                     <div class="activity__box">
-                        <img class="activity__img" src="img/key.jpg" alt="key" width="370" height="294">
+                        <picture>
+                            <source 
+                                srcset="./img/desct_x1.jpg x1,
+                                        ./img/desct_x2.jpg x2"
+                                        media="(min-width:1200px)"
+                            >
+                            <img class="activity__img" src="img/desct_x1.jpg" alt="key" width="370" height="294">
+                        </picture>
                         <div  class="activity__inner">
                             <p class="activity__text">Десктопные приложения</p>
                         </div>
@@ -162,7 +170,15 @@
                 </li>
                 <li class="activity__item">
                     <div class="activity__box">
-                        <img class="activity__img" src="img/desct+phone.jpg" alt="phone" width="370" height="294">
+                        <picture>
+                            <source 
+                                srcset="./img/mob_x1.jpg x1,
+                                        ./img/mob_x2.jpg x2"
+                                        media="(min-width:1200px)"
+                            >
+                            <img class="activity__img" src="img/mob_x1.jpg" alt="mob" width="370" height="294">
+                        </picture>
+                    
                         <div class="activity__inner">
                             <p class="activity__text">Мобильные приложения</p>
                         </div>
@@ -170,7 +186,14 @@
                 </li>
                 <li class="activity__item">
                     <div class="activity__box">
-                        <img class="activity__img" src="img/tablet.jpg" alt="tablet" width="370" height="294">
+                        <picture>
+                            <source 
+                                srcset="./img/design_x1.jpg x1,
+                                        ./img/design_x2.jpg x2"
+                                        media="(min-width:1200px)"
+                            >
+                            <img class="activity__img" src="img/design_x1.jpg" alt="design" width="370" height="294">
+                        </picture>
                         <div class="activity__inner">
                             <p class="activity__text">Дизайнерские решения</p>
                         </div>
@@ -181,6 +204,8 @@
         </div>
     </section>
     
+<!-- ================Команда===================== -->
+
     <section class="section team">
             <div class="container">
 
@@ -402,10 +427,11 @@
             </div>
         </section> 
 
+<!-- ========================Клиенты=================== -->
+
     <section class="section clients">
-
         <div class="container">
-
+        
             <h2 class="section-name">Постоянные клиенты</h2>
 
             <ul class="clients__list">
@@ -584,9 +610,10 @@
 
         </form>
     </div>
-</div> -->
+</div> 
 
 <script src="js/modal.js"></script>
+<script src="js/menu.js"></script>
 
 <script>
     (() => {
