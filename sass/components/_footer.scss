@@ -171,6 +171,11 @@ footer {
   &:focus:hover:active {
     border-color: white;
     outline: none;
+    &:active {
+      outline: none;
+      border-color: white;
+overflow-x: ;
+    }
     
   }
   @media screen and (min-width:768px) {
