@@ -8,6 +8,7 @@ header {
 
 
 nav {
+  display: flex;
   @media screen and (min-width:1200) {
     display: flex;
     gap: 90px;
@@ -15,17 +16,21 @@ nav {
 }
 
 .header {
-  padding: 25px 0;
+  padding: 12px 0;
   overflow: hidden;
   @media screen and (min-width: 768px) {
     display: flex;
+
   }
-  
+  @media screen and (min-width:1200px) {
+    padding: 25px 0;
+  }
 }
 
 .header-list {    
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 50px;
   @media screen and (max-width:768px) {
     visibility: hidden;

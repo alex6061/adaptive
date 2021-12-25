@@ -280,6 +280,10 @@ header {
   border-bottom: 1px solid #ECECEC;
 }
 
+nav {
+  display: flex;
+}
+
 @media screen and (min-width: 1200) {
   nav {
     display: flex;
@@ -288,7 +292,7 @@ header {
 }
 
 .header {
-  padding: 25px 0;
+  padding: 12px 0;
   overflow: hidden;
 }
 
@@ -298,9 +302,16 @@ header {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 25px 0;
+  }
+}
+
 .header-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 50px;
 }
 
@@ -432,6 +443,8 @@ header {
 @media screen and (min-width: 768px) {
   .header-contacts {
     display: flex;
+    align-items: center;
+    justify-content: start;
     margin-right: 0;
     flex-direction: column;
     gap: 10px;
@@ -1414,7 +1427,6 @@ label {
 
 .button-mobile {
   min-height: 40px;
-  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1425,8 +1437,6 @@ label {
   cursor: pointer;
   outline: none;
   margin-left: auto;
-  top: -20px;
-  position: relative;
   cursor: pointer;
   outline: none;
   transition: 250ms;
