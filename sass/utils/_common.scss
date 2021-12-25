@@ -1,6 +1,8 @@
 body,p,ul,h1,h2,h3,h4,h5,h6,button{margin: 0 auto;padding: 0;display: block ;}
 a{text-decoration: none;}
-
+body {
+  overflow-x:hidden;
+}
 img { display: block; max-width: 100%; height: auto; }
 li {list-style: none;display: block;}
 a{display: block;}
@@ -12,6 +14,10 @@ p {
 :-moz-placeholder           {color:#c0392b;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#c0392b;}
 
+
+::-webkit-scrollbar {
+  width: 0;
+}
 
 .container {
   padding: 0 10px;
