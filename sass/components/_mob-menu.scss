@@ -26,18 +26,11 @@
 }
 
 .button-mobile {
-    min-height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-sizing: none;
     background-color: transparent;
-    margin: 0;
-    padding: 0;
     border: none;
     cursor: pointer;
     outline: none;
-    margin-left: auto;
-    
 
     cursor: pointer;
     outline: none;
