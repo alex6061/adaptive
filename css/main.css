@@ -1464,6 +1464,7 @@ label {
 }
 
 .mobile-menu-container {
+  z-index: 999;
   top: 0;
   left: 0;
   width: 100vw;
@@ -1574,6 +1575,7 @@ label {
 .mob-menu__contacts {
   position: absolute;
   bottom: 130px;
+  margin-bottom: 20px;
 }
 
 .mob-menu__tel {
@@ -1596,6 +1598,7 @@ label {
 
 .mob-menu__networks {
   position: absolute;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   bottom: 40px;
