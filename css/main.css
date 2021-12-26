@@ -533,7 +533,7 @@ header {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero__title {
     font-size: 26px;
   }
@@ -1246,6 +1246,12 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .modal-form__main {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__main {
     flex-wrap: nowrap;
   }
 }
@@ -1422,7 +1428,7 @@ label {
   color: #188CE8;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .checkbox_link {
     font-size: 14px;
   }
