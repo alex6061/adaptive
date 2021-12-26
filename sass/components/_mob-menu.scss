@@ -127,8 +127,11 @@ letter-spacing: 0.02em;
 color: #757575;
 }
 
+
 .mob-menu__networks {
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
     bottom: 40px;
     display: flex;
     gap: 20px;

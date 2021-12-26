@@ -11,19 +11,21 @@
 
 
 .hero__title {
-  display: block;  
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 30px;
   text-align: center;
   color: white;
   font-family: 'Roboto', Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 60px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   @media screen and (min-width:768px) {
-    font-size: 26px;
+    font-size: 44px;
   }
 }
 
