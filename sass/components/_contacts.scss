@@ -39,12 +39,12 @@ margin-right: 0;
 .header-contacts__link {
   text-decoration: none;
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Roboto',Arial,sans-serif;
   font-weight: 500;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width:480px){
-    font-size: 12px;
+  @media screen and (min-width:1200px){
+    font-size: 14px;
   }
 }
 

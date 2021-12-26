@@ -464,15 +464,15 @@ header {
 .header-contacts__link {
   text-decoration: none;
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Roboto',Arial,sans-serif;
   font-weight: 500;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .header-contacts__link {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -1128,6 +1128,7 @@ footer {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 93px 15px;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1170,7 +1171,7 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 586px;
+    width: 528px;
   }
 }
 
@@ -1231,7 +1232,8 @@ footer {
 }
 
 .modal-form__main {
-  display: block;
+  display: flex;
+  text-align: center;
   margin-bottom: 12px;
   font-family: Roboto,Arial,sans-serif;
   font-weight: 700;
@@ -1239,7 +1241,13 @@ footer {
   line-height: 23px;
   letter-spacing: 0.03em;
   color: #212121;
-  white-space: nowrap;
+  white-space: wrap;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__main {
+    flex-wrap: nowrap;
+  }
 }
 
 .form__name,
@@ -1349,21 +1357,29 @@ label {
 .box {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .label {
   display: flex;
+  align-items: center;
   cursor: pointer;
   font-family: Roboto,Arial,sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
+@media screen and (min-width: 1200px) {
+  .label {
+    font-size: 14px;
+  }
+}
+
 .checkbox {
-  display: flex;
+  display: none;
   width: 16px;
   height: 15px;
   -webkit-appearance: none;
@@ -1375,15 +1391,12 @@ label {
 .checkbox__info::before {
   content: '';
   width: 16px;
-  height: 16px;
+  height: 13px;
   display: inline-block;
-  top: 4px;
-  left: -5px;
-  position: relative;
 }
 
 .checkbox__info {
-  margin-right: 8px;
+  margin-right: 7px;
   border: 1px solid black;
   border-radius: 2px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1399,13 +1412,20 @@ label {
 }
 
 .checkbox_link {
+  display: flex;
   margin-left: 4px;
   border-bottom: 1px solid #188CE8;
   font-family: Roboto,Arial,sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.03em;
   color: #188CE8;
+}
+
+@media screen and (min-width: 768px) {
+  .checkbox_link {
+    font-size: 14px;
+  }
 }
 
 .form-button {

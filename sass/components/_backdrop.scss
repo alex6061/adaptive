@@ -9,6 +9,8 @@
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 93px 15px;
+    overflow-y: scroll;
+    
 
   }
   
@@ -36,16 +38,16 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) scale(1);
-  }
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: 480px) {
-      width: 450px;
-  }
-  @media screen and (min-width: 1200px) {
-      width: 586px;
-  }
-  }
+    }
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
+    }
   
   
   .close-btn {
@@ -103,7 +105,8 @@
   }
   
   .modal-form__main {
-    display: block;
+    display: flex;
+    text-align: center;
     margin-bottom: 12px;
     font-family: Roboto,Arial,sans-serif;
     font-weight: 700;
@@ -111,7 +114,10 @@
     line-height: 23px;
     letter-spacing: 0.03em;
     color: #212121;
-    white-space: nowrap;
+    white-space: wrap;
+    @media screen and (min-width:1200px){
+      flex-wrap: nowrap;
+    }
   }
   
   .form__name,
@@ -206,21 +212,26 @@
   .box {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   
   .label {
     display:flex;
+    align-items: center;
     cursor: pointer;
     font-family: Roboto,Arial,sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: #757575;
+    @media screen and (min-width:1200px) {
+      font-size: 14px;
+    }
   }
   
   .checkbox {
-    display: flex;
+    display: none;
     width: 16px;
     height: 15px;
     -webkit-appearance: none;
@@ -229,27 +240,26 @@
     outline: none;
   }
   
+
   
   
   .checkbox__info::before {
     content: '';
     width: 16px;
-    height: 16px;
+    height: 13px;
     display: inline-block;
-    top: 4px;
-    left: -5px;
-    position: relative;
+    
   }
   
   
   .checkbox__info {
-    margin-right: 8px;
+    margin-right: 7px;
     border: 1px solid black;
     border-radius: 2px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  
+
   
   .checkbox:checked + .checkbox__info {
   
@@ -262,18 +272,21 @@
   }
   
   .checkbox_link {
+    display: flex;
     margin-left: 4px;
     border-bottom: 1px solid #188CE8;
     font-family: Roboto,Arial,sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.03em;
     color: #188CE8;
+    @media screen and (min-width:768px) {
+    font-size: 14px; 
+   }
   }
   
   .form-button {
     position: relative;
-  
     left: 50%;
     transform: translate(-50%, 0);
     margin-top: 30px;
