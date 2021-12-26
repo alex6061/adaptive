@@ -26,7 +26,8 @@
     letter-spacing: 0.03em;
     color: white;
     @media screen and (max-width:402px) {
-        padding: 14px 10px;
+        padding: 16px 14px;
+        font-size: 14px;
     }
     @media screen and (min-width:768px) {
         padding: 49px 24px;

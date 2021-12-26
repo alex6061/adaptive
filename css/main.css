@@ -238,7 +238,8 @@ p {
 
 @media screen and (max-width: 402px) {
   .overlay__text {
-    padding: 14px 10px;
+    padding: 16px 14px;
+    font-size: 14px;
   }
 }
 
