@@ -3,12 +3,22 @@
   background-image:
           linear-gradient( to right, rgba(47, 48, 58, 0.4),
                             rgba(47, 48, 58, 0.4)),
-                            url("../img/img-hero.jpg");
+                            url("../img//bg_desct_x1.jpg");
                             width: 100%;
   background-position: center;
-  background-size:  cover;
-  
+  background-size:  cover; 
 }
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+
+  .hero-img{
+    background-image: url('./../../img/bg_desct_x2.jpg');
+  }
+}
+
+
 
 
 

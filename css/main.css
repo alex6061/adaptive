@@ -170,7 +170,6 @@ p {
 
 .card__link {
   display: block;
-  overflow: hidden;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -525,10 +524,16 @@ header {
 
 .hero-img {
   padding: 120px 0;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/img-hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img//bg_desct_x1.jpg");
   width: 100%;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-img {
+    background-image: url("./../../img/bg_desct_x2.jpg");
+  }
 }
 
 .hero__title {
