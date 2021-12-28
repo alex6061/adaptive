@@ -169,3 +169,11 @@ color: #757575;
     .mob_link_portfolio {
         color: $fillColor;
     }
+
+.mob-menu__contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+ 

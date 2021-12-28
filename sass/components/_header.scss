@@ -14,6 +14,7 @@ header {
     display: flex;
     gap: 90px;
   }
+
 }
 
 .header {
@@ -29,15 +30,12 @@ header {
 }
 
 .header-list {    
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  @media screen and (max-width:768px) {
   display: none;
-  }
-  @media screen and (max-width:480px){
-    display: none;
+  @media screen and (min-width:768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
   }
 }
 
@@ -128,23 +126,3 @@ header {
   }
 }
 
-
-.mob-menu__contacts{
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.mob-menu__tel {
-  font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 34px;
-line-height: 40px;
-
-
-letter-spacing: 0.02em;
-
-
-color: #2196F3;
-}
