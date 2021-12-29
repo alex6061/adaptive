@@ -14,7 +14,12 @@
   (min-resolution: 2dppx) {
 
   .hero-img{
-    background-image: url('../img//bg_desct_x2.jpg');
+    background-image:
+    linear-gradient( to right, rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                            url('../img//bg_desct_x2.jpg');
+                            width: 100%;
+                            
   }
 }
 
