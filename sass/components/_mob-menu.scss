@@ -18,16 +18,18 @@
             @media screen and (min-width: 767px) {
                 display: none;
             }  
-        
+            
         transform: translateX(-100%);
-        transition: 3s;
+        transition: 250ms ;
         z-index: 999;
         opacity: 1;
 
     }
 
-.mobile-menu-container  .is-open{
+
+.mobile-menu-container.is-open    {
         transform: translateX(0);
+}
 
 .button-mobile {
     box-sizing: none;

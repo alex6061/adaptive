@@ -22,13 +22,12 @@
   }
   
   .modal {
-    padding: 15px;
+    padding: 40px;
     position: relative;
     overflow: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: max-content;
     height: max-content;
 
     background-color: white;
@@ -44,6 +43,7 @@
       margin-left: auto;
       margin-right: auto;
       @media screen and (min-width: 480px) {
+          margin: 0;
           width: 450px;
           padding: 40px;
       }
@@ -56,10 +56,9 @@
   
   .close-btn {
     position: relative;
-    margin: 8px 8px;
     float: right;
-    top: -43px;
-    left: 40px;
+    top: -32px;
+    left: 32px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #FFFFFF;
     box-sizing: border-box;
@@ -72,9 +71,11 @@
       border-color: $fillColor;
       outline: none;
     }
-  
-  
+    @media screen and (max-width:480px) {
+      position: relative;
+    }
   }
+
   
   .close-btn__svg {
     position: absolute;
@@ -239,6 +240,7 @@
   }
   
   .checkbox {
+    visibility: hidden;
     display: none;
     width: 16px;
     height: 15px;
@@ -247,6 +249,7 @@
     appearance: none;
     outline: none;
     opacity: 0;
+
   }
   
   .checkbox__info::before {
@@ -260,7 +263,6 @@
   .checkbox__info {
     display: flex;
     flex-wrap: wrap;
-
     margin-right: 7px;
     border: 1px solid black;
     border-radius: 2px;
@@ -268,7 +270,6 @@
   }
   
   .checkbox:checked + .checkbox__info {
-  
     background-image: url("../img/icons/icon_check.svg");
     background-color: $fillColor;
     background-repeat: no-repeat;
