@@ -73,8 +73,8 @@
       border-color: $fillColor;
       outline: none;
     }
-  
-  
+    @media screen and (max-width:480px)
+    position:fixed;
   }
   
   .close-btn__svg {
