@@ -1408,10 +1408,11 @@ label {
   width: 16px;
   height: 15px;
   border: 2px solid red;
+  border-radius: 2px;
+  transition: 250ms;
 }
 
 .checkbox:checked + .checkbox__icon {
-  background-color: chartreuse;
   background-image: url("../img/icons/icon_check.svg");
   background-color: #2196f3;
   background-repeat: no-repeat;

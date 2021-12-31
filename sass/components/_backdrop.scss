@@ -242,10 +242,12 @@
   width: 16px;
   height: 15px;
   border: 2px solid red;
+  border-radius: 2px;
+  transition: 250ms;
+      
 }
 
 .checkbox:checked + .checkbox__icon {
-    background-color: chartreuse;
     background-image: url("../img/icons/icon_check.svg");
     background-color: $fillColor;
     background-repeat: no-repeat;
@@ -253,8 +255,6 @@
     border-color: $fillColor;
     background-origin: border-box;
   }
-
-
 
   // .label {
   //   display:flex;
@@ -271,16 +271,16 @@
   //   }
   // }
   
-  // .checkbox {
-  //   width: 16px;
-  //   height: 15px;
-  //   -webkit-appearance: none;
-  //   -moz-appearance: none;
-  //   appearance: none;
-  //   outline: none;
-  //   opacity: 0;
+  .checkbox {
+    // width: 16px;
+    // height: 15px;
+    // -webkit-appearance: none;
+    // -moz-appearance: none;
+    // appearance: none;
+    // outline: none;
+    // opacity: 0;
 
-  // }
+  }
   
   // .checkbox__info::before {
   //   content: '';
