@@ -255,6 +255,12 @@
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  &:focus + .cheсkbox__icon {
+    box-shadow: 3px 2px 38px 5px rgba(14,52,250,0.53);
+-webkit-box-shadow: 3px 2px 38px 5px rgba(14,52,250,0.53);
+-moz-box-shadow: 3px 2px 38px 5px rgba(14,52,250,0.53);
+  }
+
  
 }
 
