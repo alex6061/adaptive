@@ -24,14 +24,14 @@ header {
     display: flex;
     padding: 15px 0;
   }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     padding: 25px 0;
   }
 }
 
 .header-list {    
   display: none;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@ header {
 
 
 .header__button .icon-menu .icon-cross {
-  @media screen and (min-width:768) {
+  @media screen and (min-width: 768) {
     display: none;
   }
 }
@@ -52,7 +52,7 @@ header {
   position: relative;
   left: -22px;
   top: -17px;
-  @media  screen and (min-width:768px) {
+  @media  screen and (min-width: 768px) {
     visibility: hidden;
   }
 }

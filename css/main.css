@@ -48,7 +48,7 @@ p {
 }
 
 .container {
-  padding: 10px;
+  padding: 0 10px;
 }
 
 @media screen and (min-width: 480px) {
@@ -108,7 +108,7 @@ p {
   padding: 66px 0;
 }
 
-@media screen and (min-whidth: 1200px) {
+@media screen and (min-width: 1200px) {
   .portfolio-main {
     padding: 94px 0;
   }
@@ -234,7 +234,7 @@ p {
 
 .overlay__text {
   padding: 77px 23px;
-  font-family: Roboto-Regular, Arial, sans-serif;
+  font-family: 'Roboto-Regular', Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -604,7 +604,7 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 700;
   display: block;
   text-align: center;
@@ -625,7 +625,7 @@ header {
 }
 
 .wrapper__text {
-  font-family: Roboto, Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -728,7 +728,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 27px 0;
-  font-family: Roboto-Regular, Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -772,7 +772,7 @@ header {
 }
 
 .team__name {
-  font-family: Roboto, Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -783,7 +783,7 @@ header {
 }
 
 .team__text {
-  font-family: Roboto, Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1135,7 +1135,7 @@ footer {
   background: #1d70af;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 769px) and (max-width: 1199px) {
   .footer-button {
     margin: 0 auto;
   }
@@ -1412,13 +1412,19 @@ label {
 
 .checkbox:checked + .checkbox__icon {
   background-color: chartreuse;
+  background-image: url("../img/icons/icon_check.svg");
+  background-color: #2196f3;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: #2196f3;
+  background-origin: border-box;
 }
 
-.checkbox_link {
+.modal_checkbox__link {
   display: flex;
   margin-left: 4px;
   border-bottom: 1px solid #188CE8;
-  font-family: Roboto,Arial,sans-serif;
+  font-family: 'Roboto',Arial,sans-serif;
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.03em;
@@ -1426,7 +1432,7 @@ label {
 }
 
 @media screen and (min-width: 1200px) {
-  .checkbox_link {
+  .modal_checkbox__link {
     font-size: 14px;
   }
 }
@@ -1438,7 +1444,7 @@ label {
   margin-top: 30px;
   padding: 10px 55px;
   color: white;
-  font-family: Roboto,Arial,sans-serif;
+  font-family: 'Roboto',Arial,sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1480,7 +1486,7 @@ label {
   transform: translateX(0);
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .mobile-menu-container {
     display: none;
   }

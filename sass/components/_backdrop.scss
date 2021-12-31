@@ -246,12 +246,12 @@
 
 .checkbox:checked + .checkbox__icon {
     background-color: chartreuse;
-    // background-image: url("../img/icons/icon_check.svg");
-    // background-color: $fillColor;
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // border-color: $fillColor;
-    // background-origin: border-box;
+    background-image: url("../img/icons/icon_check.svg");
+    background-color: $fillColor;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: $fillColor;
+    background-origin: border-box;
   }
 
 
@@ -301,11 +301,11 @@
   
   // 
   
-  .checkbox_link {
+  .modal_checkbox__link {
     display: flex;
     margin-left: 4px;
     border-bottom: 1px solid #188CE8;
-    font-family: Roboto,Arial,sans-serif;
+    font-family: 'Roboto',Arial,sans-serif;
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.03em;
@@ -323,7 +323,7 @@
     padding: 10px 55px;
     color:white;
   
-    font-family: Roboto,Arial,sans-serif;
+    font-family: 'Roboto',Arial,sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
