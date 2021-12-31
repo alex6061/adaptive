@@ -1403,16 +1403,25 @@ label {
   display: block;
 }
 
+.checkbox {
+  display: inline-flex;
+  width: 16px;
+  height: 15px;
+  border: 2px solid getColor("title");
+  border-radius: 2px;
+  margin-right: 6px;
+  transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1), border-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .cheсkbox__icon {
   display: inline-block;
   width: 16px;
   height: 15px;
   border: 2px solid red;
-  border-radius: 2px;
-  transition: 250ms;
 }
 
 .checkbox:checked + .checkbox__icon {
+  background-color: red;
   background-image: url("../img/icons/icon_check.svg");
   background-color: #2196f3;
   background-repeat: no-repeat;
